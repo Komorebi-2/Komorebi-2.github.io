@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="css/alpha.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css">
+      a, a:active{
+        text-decoration: none;
+        font-size: 50px;
+      }
+      #info{
+        text-align: center;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        bottom: -30%;
+      }
+      audio{
+        position: fixed;
+        left: 0;
+        top: 200px;
+      }
+      video{
+        position: fixed;
+        width: 500px;
+        right: 0;
+        top: 200px;
+        z-index: 0;
+      }
+      #info>img{
+        width: 100%;
+        z-index: 999;
+      }
+      .h1,.des{
+        transition: all 0.3s;
+      }
+      .h1:hover,.des:hover{
+        transform: translateY(-3px);
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        background-color: rgb(0, 195, 255);
+      }
+      .clearfix:before,
+      .clearfix:after,
+      ul:before,
+      ul:after{
+        display: table;
+        content: " ";
+      }
+      .clearfix:after,
+      ul:after{
+        clear:both;
+      }
+      ul li{
+        display: inline-block;
+        margin-left: 10px;
+      }
+      body{
+        background-image: url('https://puui.qpic.cn/vcover_hz_pic/0/zr5a67l333ehzu91570759226/0');
+      }
+      .tftable {
+        text-align: center;
+        font-size:12px;
+        color:#333333;
+        width:500px;
+        height: 200px;
+        margin: 0 auto;
+        border-width: 1px;
+        border-color: #729ea5;
+        border-collapse: collapse;
+      }
+      .tftable th {
+        font-size:16px;
+        background-color:#acc8cc;border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #729ea5;
+        text-align:center;
+      }
+      .tftable tr {
+        background-color:#d4e3e5;
+      }
+      .tftable td {
+        font-size:12px;
+        border-width: 1px;padding: 8px;
+        border-style: solid;
+        border-color: #729ea5;
+      }
+      footer{
+        background-color: #000;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+  </style>  
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/alpha.js" type="text/javascript"></script>
+  <title>哪吒之魔童降世</title>
+</head>
+<body>
+  <div class="jq22-container">
+    <header class="jq22-header">
+      <div class="jq22-demo center">
+        <a href="#" class="current h1">
+          哪吒之魔童降世
+        </a>
+      </div>
+    </header>
+    <section id="testimonials">
+      <div class="testim-ovl">
+      </div>
+      <div class="testimonials-wrapper">
+        <ul class="testimonials-line">
+          <li class="customer">
+            <div class="testimonial-bubble des">
+              <p>
+                哪吒是魔丸转世，李靖之子。因为魔丸转世的身份，他遭到了陈塘关百姓的歧视、排斥、嘲笑和敌对。也因此，他性格孤僻、冷漠、叛逆、憋屈、玩世不恭，时不时就要跑出门大闹陈塘关百姓，让大家也不得安生。玩世不恭的外表下，哪吒比谁都孤独，比谁都渴望认同。
+              </p>
+            </div>
+            <div class="cus-profile">
+              <span class="cus-image">
+                <img src="images/te1.jpg">
+              </span>
+              <span class="cus-name">
+                哪吒
+                <span class="cus-title">
+                  His name
+                </span>
+              </span>
+            </div>
+          </li>
+          <li class="customer">
+            <div class="testimonial-bubble des">
+              <p>
+                哪吒的师傅，乾元山金光洞的洞主，阐教大仙，元始天尊的弟子之一。说着一口“川普”，生性洒脱，为人诙谐幽默，不贪念权色却嗜酒如命。元始天尊命徒弟太乙真人将灵珠托生于李靖之子哪吒身上，然而阴差阳错下，灵珠和魔丸被掉包。太乙真人后收哪吒为徒，导其向善。
+              </p>
+            </div>
+            <div class="cus-profile">
+              <span class="cus-image">
+                <img src="images/te2.jpg">
+              </span>
+              <span class="cus-name">
+                太乙真人
+                <span class="cus-title">
+                  His name
+                </span>
+              </span>
+            </div>
+          </li>
+          <li class="customer">
+            <div class="testimonial-bubble des">
+              <p>
+                李靖是哪吒的父亲，殷夫人的丈夫，陈塘关的镇关总兵，负责守护百姓抵挡妖魔鬼怪。不善言辞、沉默少言。他对哪吒不是排斥的、霸道的，而是主动寻求一种温和、平等的沟通，即便哪吒把陈塘关惹得鸡飞狗跳，他也不惜舍弃自己的情面，帮助哪吒得到世人认可。
+              </p>
+            </div>
+            <div class="cus-profile">
+              <span class="cus-image">
+                <img src="images/te3.jpg">
+              </span>
+              <span class="cus-name">
+                李靖
+                <span class="cus-title">
+                  His name
+                </span>
+              </span>
+            </div>
+          </li>
+          <li class="customer">
+            <div class="testimonial-bubble des">
+              <p>
+                敖丙是灵珠转世，东海龙王三太子，申公豹的徒弟。身形飘逸，举止儒雅，一派翩翩美少年形象。他背负整个龙族翻身的期望，全族压力令他痛苦不堪而走上了邪路，做出了冰压陈塘关的举动。敖丙在哪吒的影响下，最终学会敢于做自己、不认命，并与哪吒联手抵抗命运，成为对方“唯一的朋友”。
+              </p>
+            </div>
+            <div class="cus-profile">
+              <span class="cus-image">
+                <img src="images/te4.jpg">
+              </span>
+              <span class="cus-name">
+                敖丙
+                <span class="cus-title">
+                  His name
+                </span>
+              </span>
+          </li>
+          <span id="prev">
+          </span>
+          <span id="next">
+          </span>
+        </ul>
+        <!-- .testimonials-line -->
+        </div>
+        <!-- .testimonials-wrapper -->
+    </section>
+    <!-- .testimonials -->
+    </div>
+    <table id="tfhover" class="tftable" border="1">
+    <tr><th>title</th><th>describe</th></tr>
+    <tr><td>作者</td><td>Wu Xue Xiao</td></tr>
+    <tr><td>邮箱</td><td>841692608@qq.com</td></tr>
+    </table>
+    <article id="info"> 
+      <p id="btn" style="cursor: pointer; color: aqua;">作者照片</p>
+      <img src="./images/meimg.jpg" class="myimg">
+    </article>
+    <audio src="./images/今后我与自己流浪.mp3" controls></audio>
+    <video src="./images/魔童降世mv.mp4" controls></video>
+    <footer>
+      <p>Copyright © 2021-1-10</p>    <p>魔童降世</p>
+    </footer>
+    <!-- 初始化容器 start -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#testimonials').alpha();
+            $('.myimg').hide()
+            $('#btn').click(()=>{
+              $('.myimg').show()
+            })
+        });
+        
+    </script>
+    <!-- 初始化容器 end -->
+</body>
+</html>
